@@ -1,0 +1,2 @@
+1. mediapipe-python采用protobuf协议，和普通的python库不同
+2. cv2.videowriter只支持np.uint8格式，并且必须在程序结束前执行release函数

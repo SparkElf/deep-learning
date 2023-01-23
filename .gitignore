@@ -1,5 +1,8 @@
 **/runs
 .vscode
-**/data/
+DNCNN/data/
 **/__pycache__
 **/result
+unsupervised image denoise/data/
+MINIST手写数字识别/data/
+facial landmarks denoise/**/*.mp4
