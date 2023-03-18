@@ -5,3 +5,5 @@
 5. self2self的泛化能力较弱，基本不具有泛化能力，应该往浅层、小网络发展
 6. dropout一般不在浅层网络使用
 7. 浅层网络不一定学习率就小
+8. 网络越深滤出的高频细节越多
+9. 这个损失函数收敛很快：loss=mse( xymodel(noisyxy\*mask)\*mask_inv, noisyxy\*mask_inv)/mask_inv.sum()+1e-7\*torch.nn.functional.mse_loss(xymodel(noisyxy).detach(),noisyxy)
